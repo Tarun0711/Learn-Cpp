@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function confirmbox()
+{
+var txt;
+if(confirm("This is your home page"))
+{
+txt="you pressed ok";
+}
+else
+{
+txt="you pressed cancel";
+}
+document.getElementById("demo").innerHTML=txt;
+}
+</script>
+</head>
+<body>
+<input type="button" name="ok" value="ok" onclick="confirmbox()">
+<p id="demo"></p>
+
+</body>
+</html>
